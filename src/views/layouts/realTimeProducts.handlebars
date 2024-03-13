@@ -1,0 +1,32 @@
+<!-- realTimeProducts.handlebars -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Productos en Tiempo Real</title>
+</head>
+<body>
+  <h1>Bienvenido, {{user.first_name}} {{user.last_name}}!</h1>
+  <h2>Productos en Tiempo Real</h2>
+  <ul id="realTimeProducts">
+    <!-- Lista de productos actualizada en tiempo real -->
+  </ul>
+
+  <!-- Formulario para agregar productos -->
+  <form id="addProductForm">
+    <input type="text" id="productName" placeholder="Nombre del producto">
+    <input type="text" id="productPrice" placeholder="Precio del producto">
+    <button type="submit">Agregar Producto</button>
+  </form>
+
+  <!-- Formulario para eliminar productos -->
+  <form id="deleteProductForm">
+    <input type="text" id="productId" placeholder="ID del producto a eliminar">
+    <button type="submit">Eliminar Producto</button>
+  </form>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+  <script type="text/javascript" src="/js/index.js"></script>
+</body>
+</html>

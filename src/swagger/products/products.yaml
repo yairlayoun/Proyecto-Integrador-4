@@ -1,0 +1,89 @@
+openapi: 3.1.0
+info:
+  title: 'API de Productos'
+  version: 1.0.0
+  description: 'Documentación para el módulo de productos.'
+
+paths:
+  /api/products:
+    get:
+      summary: Obtener todos los productos
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              example:
+                - id: 1
+                  nombre: 'Producto 1'
+                  descripcion: 'Descripción del producto 1'
+                  precio: 20.0
+                  stock: 50
+                  categoria: 'Categoría 1'
+                  esVisible: true
+                - id: 2
+                  nombre: 'Producto 2'
+                  descripcion: 'Descripción del producto 2'
+                  precio: 30.0
+                  stock: 30
+                  categoria: 'Categoría 2'
+                  esVisible: true
+
+  /api/products/{productId}:
+    get:
+      summary: Obtener un producto por ID
+      parameters:
+        - in: path
+          name: productId
+          required: true
+          schema:
+            type: string
+          description: ID del producto
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              example:
+                id: 1
+                nombre: 'Producto 1'
+                descripcion: 'Descripción del producto 1'
+                precio: 20.0
+                stock: 50
+                categoria: 'Categoría 1'
+                esVisible: true
+        '404':
+          description: Producto no encontrado
+          content:
+            application/json:
+              example:
+                error: 'Producto no encontrado'
+
+    # Aquí continúa con las operaciones POST, PUT y DELETE
+
+components:
+  schemas:
+    Product:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: ID del producto
+        nombre:
+          type: string
+          description: Nombre del producto
+        descripcion:
+          type: string
+          description: Descripción del producto
+        precio:
+          type: number
+          description: Precio del producto
+        stock:
+          type: integer
+          description: Stock del producto
+        categoria:
+          type: string
+          description: Categoría del producto
+        esVisible:
+          type: boolean
+          description: Indica si el producto es visible o no

@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "nombre": "Camiseta",
+    "descripcion": "Camiseta de algodón suave",
+    "precio": 15.99,
+    "stock": 50
+  },
+  {
+    "id": 2,
+    "nombre": "Pantalones vaqueros",
+    "descripcion": "Pantalones vaqueros de estilo casual",
+    "precio": 29.99,
+    "stock": 30
+  },
+  {
+    "id": 3,
+    "nombre": "Zapatos deportivos",
+    "descripcion": "Zapatos cómodos para correr",
+    "precio": 49.99,
+    "stock": 20
+  },
+  {
+    "id": 4,
+    "nombre": "Chaqueta",
+    "descripcion": "Chaqueta ligera resistente al agua",
+    "precio": 39.99,
+    "stock": 40
+  },
+  {
+    "id": 5,
+    "nombre": "Sombrero de verano",
+    "descripcion": "Sombrero de ala ancha para el sol",
+    "precio": 19.99,
+    "stock": 25
+  },
+  {
+    "id": 6,
+    "nombre": "Vestido floral",
+    "descripcion": "Vestido elegante para ocasiones especiales",
+    "precio": 59.99,
+    "stock": 15
+  },
+  {
+    "id": 7,
+    "nombre": "Reloj de pulsera",
+    "descripcion": "Reloj de diseño clásico",
+    "precio": 79.99,
+    "stock": 10
+  },
+  {
+    "id": 8,
+    "nombre": "Mochila resistente",
+    "descripcion": "Mochila espaciosa para viajes",
+    "precio": 34.99,
+    "stock": 30
+  },
+  {
+    "id": 9,
+    "nombre": "Gafas de sol",
+    "descripcion": "Gafas de sol con protección UV",
+    "precio": 25.99,
+    "stock": 35
+  },
+  {
+    "id": 10,
+    "nombre": "Cinturón de cuero",
+    "descripcion": "Cinturón de cuero genuino",
+    "precio": 22.99,
+    "stock": 45
+  }
+]
